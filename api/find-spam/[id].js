@@ -5,7 +5,6 @@ const findOccurance = (a, b) => !!a
   .split(' ')
   .find(has(b))
 
-// module.exports = ({ query: { params: { mail, name } } }, res) => {
 module.exports = ({ query: { id, mail, name } }, res) => {
   const isSuspect = !findOccurance(name, mail)
   res.json({ id, mail, name, isSuspect })
