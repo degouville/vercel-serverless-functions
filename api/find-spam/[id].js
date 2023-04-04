@@ -1,4 +1,3 @@
-// const has = b => a => b.includes(a)
 const has = b => a => b.includes(a)
 const nonEmpty = e => e !== ''
 
